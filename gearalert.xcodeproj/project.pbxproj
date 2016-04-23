@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CC50D34D1CCB82D10061A860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D34C1CCB82D10061A860 /* AppDelegate.swift */; };
-		CC50D34F1CCB82D10061A860 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D34E1CCB82D10061A860 /* ViewController.swift */; };
 		CC50D3521CCB82D10061A860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D3501CCB82D10061A860 /* Main.storyboard */; };
-		CC50D3541CCB82D10061A860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC50D3531CCB82D10061A860 /* Assets.xcassets */; };
 		CC50D3571CCB82D10061A860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D3551CCB82D10061A860 /* LaunchScreen.storyboard */; };
 		CC50D3621CCB82D10061A860 /* gearalertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D3611CCB82D10061A860 /* gearalertTests.swift */; };
 		CC50D36D1CCB82D10061A860 /* gearalertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D36C1CCB82D10061A860 /* gearalertUITests.swift */; };
+		CC50D37B1CCB8EA20061A860 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D37A1CCB8EA20061A860 /* MainViewController.swift */; };
+		CC50D37D1CCB96BD0061A860 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D37C1CCB96BD0061A860 /* HomeViewController.swift */; };
+		CC50D3801CCB99F10061A860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC50D37F1CCB99F10061A860 /* Images.xcassets */; };
+		CC50D3821CCB9F930061A860 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D3811CCB9F930061A860 /* UploadViewController.swift */; };
+		CC50D3841CCB9F9F0061A860 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D3831CCB9F9F0061A860 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +39,7 @@
 /* Begin PBXFileReference section */
 		CC50D3491CCB82D10061A860 /* gearalert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gearalert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC50D34C1CCB82D10061A860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC50D34E1CCB82D10061A860 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC50D3511CCB82D10061A860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC50D3531CCB82D10061A860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC50D3561CCB82D10061A860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC50D3581CCB82D10061A860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC50D35D1CCB82D10061A860 /* gearalertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gearalertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +48,11 @@
 		CC50D3681CCB82D10061A860 /* gearalertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gearalertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC50D36C1CCB82D10061A860 /* gearalertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gearalertUITests.swift; sourceTree = "<group>"; };
 		CC50D36E1CCB82D10061A860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC50D37A1CCB8EA20061A860 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CC50D37C1CCB96BD0061A860 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CC50D37F1CCB99F10061A860 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		CC50D3811CCB9F930061A860 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		CC50D3831CCB9F9F0061A860 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				CC50D34C1CCB82D10061A860 /* AppDelegate.swift */,
-				CC50D34E1CCB82D10061A860 /* ViewController.swift */,
+				CC50D37F1CCB99F10061A860 /* Images.xcassets */,
 				CC50D3501CCB82D10061A860 /* Main.storyboard */,
-				CC50D3531CCB82D10061A860 /* Assets.xcassets */,
 				CC50D3551CCB82D10061A860 /* LaunchScreen.storyboard */,
 				CC50D3581CCB82D10061A860 /* Info.plist */,
+				CC50D37A1CCB8EA20061A860 /* MainViewController.swift */,
+				CC50D37C1CCB96BD0061A860 /* HomeViewController.swift */,
+				CC50D3811CCB9F930061A860 /* UploadViewController.swift */,
+				CC50D3831CCB9F9F0061A860 /* SettingsViewController.swift */,
 			);
 			path = gearalert;
 			sourceTree = "<group>";
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					CC50D3481CCB82D00061A860 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = RAHADHP5A7;
 					};
 					CC50D35C1CCB82D10061A860 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -229,8 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC50D3801CCB99F10061A860 /* Images.xcassets in Resources */,
 				CC50D3571CCB82D10061A860 /* LaunchScreen.storyboard in Resources */,
-				CC50D3541CCB82D10061A860 /* Assets.xcassets in Resources */,
 				CC50D3521CCB82D10061A860 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC50D34F1CCB82D10061A860 /* ViewController.swift in Sources */,
+				CC50D37B1CCB8EA20061A860 /* MainViewController.swift in Sources */,
+				CC50D3821CCB9F930061A860 /* UploadViewController.swift in Sources */,
 				CC50D34D1CCB82D10061A860 /* AppDelegate.swift in Sources */,
+				CC50D3841CCB9F9F0061A860 /* SettingsViewController.swift in Sources */,
+				CC50D37D1CCB96BD0061A860 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +412,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = gearalert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Official.gearalert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +426,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = gearalert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Official.gearalert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
