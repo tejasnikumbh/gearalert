@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Upload-->
@@ -14,6 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="geI-ec-JDx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zQ4-tB-hRY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload - Item 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAm-wM-oWb">
@@ -53,6 +55,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hdS-h4-zp6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tiy-US-8BL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stats - Item 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yn-Nw-2Go">
@@ -92,31 +95,61 @@
                         <viewControllerLayoutGuide type="bottom" id="kbj-pQ-pw1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bfz-dL-cyV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map - Item 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGd-Qn-llO">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="20" width="42" height="21"/>
-                                </variation>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PPO-ZC-MR5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PPO-ZC-MR5" firstAttribute="leading" secondItem="Bfz-dL-cyV" secondAttribute="leadingMargin" constant="-27" id="7AY-gl-ZRv">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="PPO-ZC-MR5" secondAttribute="trailing" id="SXv-ud-Ynu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PPO-ZC-MR5" secondAttribute="trailing" constant="147" id="pVj-E2-dHK">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="PPO-ZC-MR5" firstAttribute="leading" secondItem="Bfz-dL-cyV" secondAttribute="leading" id="rMm-qR-acB"/>
+                            <constraint firstItem="PPO-ZC-MR5" firstAttribute="top" secondItem="Huy-EZ-b7i" secondAttribute="bottom" constant="265" id="uI8-9A-G1z">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="kbj-pQ-pw1" firstAttribute="top" secondItem="PPO-ZC-MR5" secondAttribute="bottom" constant="138" id="ue4-9E-LPP">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="wGd-Qn-llO"/>
+                                <exclude reference="PPO-ZC-MR5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7AY-gl-ZRv"/>
+                                <exclude reference="SXv-ud-Ynu"/>
+                                <exclude reference="pVj-E2-dHK"/>
+                                <exclude reference="rMm-qR-acB"/>
+                                <exclude reference="uI8-9A-G1z"/>
+                                <exclude reference="ue4-9E-LPP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="wGd-Qn-llO"/>
+                                <include reference="PPO-ZC-MR5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7AY-gl-ZRv"/>
+                                <include reference="SXv-ud-Ynu"/>
+                                <exclude reference="pVj-E2-dHK"/>
+                                <include reference="rMm-qR-acB"/>
+                                <include reference="uI8-9A-G1z"/>
+                                <include reference="ue4-9E-LPP"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" selectedImage="map_selected" id="C1e-om-30h"/>
+                    <connections>
+                        <outlet property="mapView" destination="PPO-ZC-MR5" id="UTi-SZ-Qh4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bu7-ep-8mO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
