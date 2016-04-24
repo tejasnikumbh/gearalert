@@ -17,6 +17,11 @@
 		CC50D3801CCB99F10061A860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC50D37F1CCB99F10061A860 /* Images.xcassets */; };
 		CC50D3821CCB9F930061A860 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D3811CCB9F930061A860 /* UploadViewController.swift */; };
 		CC50D3841CCB9F9F0061A860 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D3831CCB9F9F0061A860 /* SettingsViewController.swift */; };
+		CC50D38F1CCBC2B20061A860 /* FishGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D38E1CCBC2B20061A860 /* FishGear.swift */; };
+		CC50D4691CCC93370061A860 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D4681CCC93370061A860 /* FormViewController.swift */; };
+		CC50D46B1CCCA05F0061A860 /* CurrentFishGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D46A1CCCA05F0061A860 /* CurrentFishGear.swift */; };
+		CC50D46D1CCCB7420061A860 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D46C1CCCB7420061A860 /* UserLocation.swift */; };
+		CC50D46F1CCCBA5F0061A860 /* ColorPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D46E1CCCBA5F0061A860 /* ColorPointAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		CC50D37F1CCB99F10061A860 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		CC50D3811CCB9F930061A860 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		CC50D3831CCB9F9F0061A860 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CC50D38E1CCBC2B20061A860 /* FishGear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishGear.swift; sourceTree = "<group>"; };
+		CC50D4681CCC93370061A860 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		CC50D46A1CCCA05F0061A860 /* CurrentFishGear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentFishGear.swift; sourceTree = "<group>"; };
+		CC50D46C1CCCB7420061A860 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		CC50D46E1CCCBA5F0061A860 /* ColorPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPointAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,8 @@
 		CC50D34B1CCB82D10061A860 /* gearalert */ = {
 			isa = PBXGroup;
 			children = (
+				CC50D3901CCBCCAD0061A860 /* lib */,
+				CC50D38D1CCBC2970061A860 /* models */,
 				CC50D34C1CCB82D10061A860 /* AppDelegate.swift */,
 				CC50D37F1CCB99F10061A860 /* Images.xcassets */,
 				CC50D3501CCB82D10061A860 /* Main.storyboard */,
@@ -112,6 +124,7 @@
 				CC50D37C1CCB96BD0061A860 /* HomeViewController.swift */,
 				CC50D3811CCB9F930061A860 /* UploadViewController.swift */,
 				CC50D3831CCB9F9F0061A860 /* SettingsViewController.swift */,
+				CC50D4681CCC93370061A860 /* FormViewController.swift */,
 			);
 			path = gearalert;
 			sourceTree = "<group>";
@@ -132,6 +145,24 @@
 				CC50D36E1CCB82D10061A860 /* Info.plist */,
 			);
 			path = gearalertUITests;
+			sourceTree = "<group>";
+		};
+		CC50D38D1CCBC2970061A860 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CC50D38E1CCBC2B20061A860 /* FishGear.swift */,
+				CC50D46C1CCCB7420061A860 /* UserLocation.swift */,
+				CC50D46E1CCCBA5F0061A860 /* ColorPointAnnotation.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		CC50D3901CCBCCAD0061A860 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CC50D46A1CCCA05F0061A860 /* CurrentFishGear.swift */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +298,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC50D37B1CCB8EA20061A860 /* MainViewController.swift in Sources */,
+				CC50D46F1CCCBA5F0061A860 /* ColorPointAnnotation.swift in Sources */,
 				CC50D3821CCB9F930061A860 /* UploadViewController.swift in Sources */,
 				CC50D34D1CCB82D10061A860 /* AppDelegate.swift in Sources */,
+				CC50D46D1CCCB7420061A860 /* UserLocation.swift in Sources */,
+				CC50D46B1CCCA05F0061A860 /* CurrentFishGear.swift in Sources */,
 				CC50D3841CCB9F9F0061A860 /* SettingsViewController.swift in Sources */,
+				CC50D38F1CCBC2B20061A860 /* FishGear.swift in Sources */,
 				CC50D37D1CCB96BD0061A860 /* HomeViewController.swift in Sources */,
+				CC50D4691CCC93370061A860 /* FormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +539,7 @@
 				CC50D3731CCB82D10061A860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC50D3741CCB82D10061A860 /* Build configuration list for PBXNativeTarget "gearalertTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +548,7 @@
 				CC50D3761CCB82D10061A860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC50D3771CCB82D10061A860 /* Build configuration list for PBXNativeTarget "gearalertUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +557,7 @@
 				CC50D3791CCB82D10061A860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
